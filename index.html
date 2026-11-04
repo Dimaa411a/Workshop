@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Maine Coon — the forest cat from Maine</title>
+  <meta name="description" content="A landing page about Maine Coons that workshop participants change using Git and GitHub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐈</text></svg>">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero__text">
+      <!-- TASK 1: change this heading to your own, then commit and push -->
+      <h1>The cat that grew out of the forest</h1>
+      <p class="hero__lead">
+        The Maine Coon is one of the largest domestic cat breeds.
+        Lynx-like ear tufts, a tail like a squirrel’s, and the temperament
+        of a big, gentle dog.
+      </p>
+      <a class="button" href="#community">See the participants’ cats</a>
+    </div>
+    <div class="hero__cat" id="hero-cat" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="block" id="about">
+      <h2>Where they come from</h2>
+      <p>
+        The breed took shape on farms in the northeastern United States, in the state of Maine.
+        Long winters did their work: a thick, water-resistant coat, wide paws that stay
+        on top of the snow, and a bushy tail the cat wraps around itself while sleeping.
+        In 1985 the Maine Coon became the official state cat of Maine.
+      </p>
+    </section>
+
+    <section class="block" id="size">
+      <h2>Just how big is it</h2>
+      <p>Length from nose to tip of tail:</p>
+      <div class="ruler" role="list">
+        <div class="ruler__row" role="listitem">
+          <span class="ruler__label">Average house cat</span>
+          <span class="ruler__bar" style="--len: 46"></span>
+          <span class="ruler__value">≈ 46 cm</span>
+        </div>
+        <div class="ruler__row" role="listitem">
+          <span class="ruler__label">Typical Maine Coon</span>
+          <span class="ruler__bar ruler__bar--coon" style="--len: 100"></span>
+          <span class="ruler__value">up to 100 cm</span>
+        </div>
+        <div class="ruler__row" role="listitem">
+          <span class="ruler__label">Stewie, record holder</span>
+          <span class="ruler__bar ruler__bar--record" style="--len: 123"></span>
+          <span class="ruler__value">123 cm</span>
+        </div>
+      </div>
+      <p class="note">Males weigh 6–9 kg, females 4–6 kg. They mature slowly and only reach full size at 3–5 years.</p>
+    </section>
+
+    <section class="block" id="traits">
+      <h2>What makes them special</h2>
+      <dl class="traits">
+        <div>
+          <dt>Voice</dt>
+          <dd>Instead of a loud “meow”, they often make a soft trilling chirp that sounds almost like a bird.</dd>
+        </div>
+        <div>
+          <dt>Water</dt>
+          <dd>Many Maine Coons aren’t afraid of water and love splashing a paw in their bowl.</dd>
+        </div>
+        <div>
+          <dt>Temperament</dt>
+          <dd>They follow their people from room to room and get along well with kids and dogs.</dd>
+        </div>
+        <div>
+          <dt>Grooming</dt>
+          <dd>Brush the coat once or twice a week to keep mats from forming.</dd>
+        </div>
+        <!-- TASK 2 : add your own fact here by copying one <div>…</div> block above -->
+      </dl>
+    </section>
+
+    <section class="block block--wide" id="community">
+      <h2>Workshop participants’ cats</h2>
+      <p>
+        Every card below got here through a Pull Request.
+        To add yours, follow step 7 in the repository’s <code>README.md</code>.
+      </p>
+      <div class="cats" id="cats"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built by the participants of a Git and GitHub workshop. Every line of this site has a history — try <code>git log</code>.</p>
+  </footer>
+
+  <script src="data/cats.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

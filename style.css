@@ -1,0 +1,213 @@
+/* Кольори ялинового лісу й рудого табі */
+:root {
+  --bg: #E3E9E1;        /* лишайник */
+  --surface: #F3F6F1;   /* березова кора */
+  --ink: #1C2B23;       /* ялина в сутінках */
+  --muted: #4E5F55;
+  --amber: #B8742A;     /* руде табі */
+  --bark: #5A4230;      /* кора */
+  --moss: #6F8A5B;      /* мох */
+  --line: #C3CEC2;
+
+  --font-display: "Young Serif", Georgia, "Times New Roman", serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141D18;
+    --surface: #1C2822;
+    --ink: #E6ECE4;
+    --muted: #A7B5AC;
+    --amber: #D9944A;
+    --bark: #C9A88A;
+    --moss: #93AE7E;
+    --line: #2E3D35;
+    color-scheme: dark;
+  }
+}
+
+*, *::before, *::after { box-sizing: inherit; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+img, svg { max-width: 100%; }
+
+h1, h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+}
+
+a { color: var(--amber); }
+a:focus-visible, .button:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 3px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: end;
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 6vw, 5rem) 1.5rem 0;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 7vw, 5.2rem);
+  letter-spacing: -0.01em;
+}
+
+.hero__lead {
+  max-width: 34ch;
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin: 0 0 2rem;
+}
+
+.hero__text { padding-bottom: 3rem; }
+
+.hero__cat svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  background: var(--ink);
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 999px;
+}
+.button:hover { background: var(--bark); }
+
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero__cat { max-width: 20rem; justify-self: center; order: -1; }
+  .hero__text { padding-bottom: 1rem; }
+}
+
+/* ---------- Блоки ---------- */
+main { border-top: 2px solid var(--ink); }
+
+.block {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem;
+}
+.block + .block { border-top: 1px solid var(--line); }
+.block--wide { max-width: 72rem; }
+
+.block h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+.block p { max-width: 65ch; }
+
+.note { color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- Лінійка розмірів ---------- */
+.ruler { margin: 1.5rem 0; display: grid; gap: 0.9rem; }
+
+.ruler__row {
+  display: grid;
+  grid-template-columns: 10rem 1fr 5.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ruler__bar {
+  height: 0.9rem;
+  width: calc(var(--len) / 123 * 100%);
+  background: var(--moss);
+  border-radius: 0 999px 999px 0;
+  transform-origin: left;
+  animation: grow 0.9s ease-out both;
+}
+.ruler__bar--coon { background: var(--amber); }
+.ruler__bar--record { background: var(--bark); }
+
+.ruler__value { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+@keyframes grow { from { transform: scaleX(0); } }
+@media (prefers-reduced-motion: reduce) { .ruler__bar { animation: none; } }
+
+@media (max-width: 560px) {
+  .ruler__row { grid-template-columns: 1fr auto; }
+  .ruler__label { grid-column: 1 / -1; }
+}
+
+/* ---------- Особливості ---------- */
+.traits { margin: 0; display: grid; gap: 1.5rem; }
+.traits div {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 1rem;
+}
+.traits dt {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--amber);
+}
+.traits dd { margin: 0; }
+
+@media (max-width: 560px) {
+  .traits div { grid-template-columns: 1fr; gap: 0.2rem; }
+}
+
+/* ---------- Коти учасників ---------- */
+.cats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.cat {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem 1.25rem 0.4rem 0.4rem;
+  padding: 1.25rem;
+}
+.cat svg { width: 5.5rem; height: auto; display: block; margin-bottom: 0.5rem; }
+.cat h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.4rem; margin: 0; }
+.cat__owner { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.6rem; }
+.cat__owner a { color: inherit; }
+.cat__fact { margin: 0; font-size: 0.98rem; }
+
+.cats__empty {
+  grid-column: 1 / -1;
+  padding: 2rem;
+  border: 2px dashed var(--line);
+  border-radius: 1rem;
+  color: var(--muted);
+}
+
+/* ---------- Футер ---------- */
+.footer {
+  border-top: 2px solid var(--ink);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.footer code { font-size: 0.95em; color: var(--ink); }
