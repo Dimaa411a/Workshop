@@ -21,4 +21,12 @@ window.CATS = [
     stripe: "",
     fact: ""
   },
+// Fill this maine coon info
+   {
+    name: "Киця",
+    github: "olesia",
+    fur: "#CCCBE6",
+    stripe: "#F467B2",
+    fact: "Дуже рожевий котик"
+  },
 ];
