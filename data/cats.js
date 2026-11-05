@@ -10,31 +10,22 @@ window.CATS = [
     name: "Сніжка",
     github: "octocat",
     fur: "#D9D4CC",
-    stripe: "#8C857B",
+    stripe: "#433e37",
     fact: "Широкі лапи з пучками шерсті між пальцями працюють як снігоступи."
   },
   // Fill this maine coon info
    {
-    name: "",
-    github: "",
-    fur: "",
-    stripe: "",
-    fact: ""
+    name: "Manny",
+    github: "KosterKI",
+    fur: "#8C857B",
+    stripe: "#433e37",
+    fact: "Manny is a friendly Maine Coon who loves to play with his toys."
   },
-  // Fill this maine coon info
-   {
-    name: "Sonya",
-    github: "Alina",
-    fur: "#D6E0EB",
-    stripe: "#3E73AD",
-    fact: "Sleepy"
-  },
-// Fill this maine coon info
-   {
-    name: "Киця",
-    github: "olesia",
-    fur: "#CCCBE6",
-    stripe: "#F467B2",
-    fact: "Дуже рожевий котик"
+     {
+    name: "Barsik",
+    github: "Barsik1999TOP",
+    fur: "#d534eb",
+    stripe: "#f6b8ff",
+    fact: "Old as fuck"
   },
 ];
