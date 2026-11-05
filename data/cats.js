@@ -71,6 +71,7 @@ window.CATS = [
     },
     fact: "Коти не відчувають солодкого смаку: ген рецептора солодкого в них не працює."
   },
+    // Fill this maine coon info
    {
     name: "Murchik",
     github: "Vira",
