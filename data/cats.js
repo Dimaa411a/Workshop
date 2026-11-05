@@ -21,6 +21,13 @@ window.CATS = [
     stripe: "",
     fact: ""
   },
+     {
+    name: "Chanel",
+    github: "anastasiia-lok",
+    fur: "#737373","#EBEBEB","#6A4F38"
+    stripe: "",
+    fact: "Chanel really loves to lie on the armrests of chairs"
+     },
   // Fill this maine coon info
    {
     name: "Sonya",
@@ -29,13 +36,12 @@ window.CATS = [
     stripe: "#3E73AD",
     fact: "Sleepy"
   },
-// Fill this maine coon info
    {
-    name: "Киця",
-    github: "olesia",
-    fur: "#CCCBE6",
-    stripe: "#F467B2",
-    fact: "Дуже рожевий котик"
+    name: "Tiffani",
+    github: "anastasiia-lok",
+    fur: "#737373","#EBEBEB"
+    stripe: "",
+    fact: "Tiffany considers herself the queen of the house"
   },
   {
     name: "Chukoliadka",
