@@ -26,10 +26,12 @@ window.CATS = [
     github: "Barsik1999TOP",
     fur: "#d534eb",
     stripe: "#f6b8ff",
-    fact: "Old as fuck"
+    fact: "Old as fuck",
+     },
+     {
     name: "Chanel",
     github: "anastasiia-lok",
-    fur: "#737373","#EBEBEB","#6A4F38"
+    fur: "#ffffff",
     stripe: "",
     fact: "Chanel really loves to lie on the armrests of chairs"
      },
@@ -41,10 +43,17 @@ window.CATS = [
     stripe: "#3E73AD",
     fact: "Sleepy"
   },
+  {
+    name: "Киця",
+    github: "olesia",
+    fur: "#CCCBE6",
+    stripe: "#dc4c99",
+    fact: "Дуже рожевий котик"
+  },
    {
     name: "Tiffani",
     github: "anastasiia-lok",
-    fur: "#737373","#EBEBEB"
+    fur: "#737373",
     stripe: "",
     fact: "Tiffany considers herself the queen of the house"
   },
@@ -61,5 +70,12 @@ window.CATS = [
       buckle: "#FFD23F"
     },
     fact: "Коти не відчувають солодкого смаку: ген рецептора солодкого в них не працює."
+  },
+   {
+    name: "Murchik",
+    github: "Vira",
+    fur: "#FF0000",
+    stripe: "#FFFFFF",
+    fact: "Cutie"
   },
 ];
