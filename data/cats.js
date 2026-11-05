@@ -79,4 +79,11 @@ window.CATS = [
     stripe: "#FFFFFF",
     fact: "Cutie"
   },
+  {
+    name: "Persyk",
+    github: "Dimaa411a",
+    fur: "#e5b256",
+    stripe: "#ce952f",
+    fact: "Don't touch me"
+  }
 ];
