@@ -27,6 +27,14 @@ window.CATS = [
     fur: "#737373","#EBEBEB","#6A4F38"
     stripe: "",
     fact: "Chanel really loves to lie on the armrests of chairs"
+     },
+  // Fill this maine coon info
+   {
+    name: "Sonya",
+    github: "Alina",
+    fur: "#D6E0EB",
+    stripe: "#3E73AD",
+    fact: "Sleepy"
   },
    {
     name: "Tiffani",
