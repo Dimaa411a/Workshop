@@ -37,4 +37,18 @@ window.CATS = [
     stripe: "#F467B2",
     fact: "Дуже рожевий котик"
   },
+  {
+    name: "Chukoliadka",
+    github: "octocat",
+    fur: "#B565D9",
+    stripe: "#4F5BD5",
+    accent: "#F28BC0",
+    hat: {
+      type: "witch",
+      color: "#1E1B2E",
+      band: "#FF7A1A",
+      buckle: "#FFD23F"
+    },
+    fact: "Коти не відчувають солодкого смаку: ген рецептора солодкого в них не працює."
+  },
 ];
